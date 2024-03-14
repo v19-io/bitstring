@@ -41,4 +41,10 @@ export default class Bitstring {
     result.set(this.bits);
     this.bits = result;
   }
+
+  leftPad(bytes: number) {
+    const result = new Uint8Array(this.bits.length + bytes);
+    result.set(this.bits, bytes);
+    this.bits = result;
+  }
 }
