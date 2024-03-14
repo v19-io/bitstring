@@ -6,6 +6,9 @@
   "scripts": {
     "build": "rollup -c && tsc"
   },
+  "repository": {
+    "url": "https://github.com/v19-io/bitstring"
+  },
   "types": "./lib/index.d.ts",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
