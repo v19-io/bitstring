@@ -47,4 +47,8 @@ export default class Bitstring {
     result.set(this.bits, bytes);
     this.bits = result;
   }
+
+  toUint8Array() {
+    return this.bits;
+  }
 }
