@@ -35,4 +35,10 @@ export default class Bitstring {
       ""
     );
   }
+
+  rightPad(bytes: number) {
+    const result = new Uint8Array(this.bits.length + bytes);
+    result.set(this.bits);
+    this.bits = result;
+  }
 }
